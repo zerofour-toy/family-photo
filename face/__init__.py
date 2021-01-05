@@ -8,11 +8,6 @@ from .cv2_recognizer import CV2Recognizer
 from .gcp_recognizer import GCPRecognizer
 
 
-class Recognizer:
-    def extract_faces(self, image):
-        raise NotImplementedError
-
-
 def image2array(image):
     return numpy.array(image)
 

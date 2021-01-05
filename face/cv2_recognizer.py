@@ -1,8 +1,9 @@
 import cv2
 import face
+from face.recognizer import Recognizer
 
 
-class CV2Recognizer(face.Recognizer):
+class CV2Recognizer(Recognizer):
     def extract_faces(self, image):
         array = face.image2array(image)
         gray = cv2.cvtColor(array, cv2.COLOR_BGR2GRAY)

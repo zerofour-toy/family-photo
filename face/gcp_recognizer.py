@@ -1,8 +1,9 @@
 from google.cloud import vision
 import face
+from face.recognizer import Recognizer
 
 
-class GCPRecognizer(face.Recognizer):
+class GCPRecognizer(Recognizer):
     def __init__(self):
         self.client = vision.ImageAnnotatorClient()
 

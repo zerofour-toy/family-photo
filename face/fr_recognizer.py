@@ -1,8 +1,9 @@
 import face_recognition as fr
 import face
+from face.recognizer import Recognizer
 
 
-class FRRecognizer(face.Recognizer):
+class FRRecognizer(Recognizer):
     def extract_faces(self, image):
         array = face.image2array(image)
         faces = []
